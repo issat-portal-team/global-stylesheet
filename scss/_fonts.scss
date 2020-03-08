@@ -1,0 +1,38 @@
+@import "variables";
+@font-face {
+    font-family: 'circular';
+    src: 
+        url(fonts/CircularStd-Bold.woff) format("woff"),
+        url(fonts/CircularStd-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'circular';
+    src: 
+        url(fonts/CircularStd-Medium.woff) format("woff"),
+        url(fonts/CircularStd-Medium.woff2) format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'circular';
+    src: 
+        url(fonts/CircularStd-Book.woff) format("woff"),
+        url(fonts/CircularStd-Book.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*, *::before, *::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root {
+    font-size: $font-size;
+}
+
+html {
+    font-family: 'circular'
+}

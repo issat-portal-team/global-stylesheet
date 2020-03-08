@@ -1,0 +1,24 @@
+@mixin fill ($dimension, $after) {
+    @if $dimension == "width" {
+        min-width: calc(100vw - #{$after});
+        width: 100%;
+    }@else if $dimension =="height" {
+        height: calc( 100vh - #{$after} );
+        height: 100%;
+    }
+}
+
+@mixin align($direction) {
+
+    display: flex;
+    align-items: center;
+    @if $direction == 'vertical' {
+        flex-direction: column;
+        height: 100%;
+    }
+    @else if $direction == 'horizontal' {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+}
